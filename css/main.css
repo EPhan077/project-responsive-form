@@ -1,0 +1,300 @@
+body, .box, .box .column, h1, #orderSum, footer, .shipping-content {
+  margin-left: auto;
+  margin-right: auto; }
+
+/*** Structure ***/
+.clear:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body {
+  max-width: 1200px; }
+
+.box {
+  width: 100%; }
+  .box .column {
+    background-color: #FFF;
+    height: auto;
+    padding: 0.625rem;
+    width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.column:nth-of-type(2) {
+  background-color: #EEE; }
+
+.column:nth-of-type(3) {
+  background-color: #DDD; }
+
+/*** Typography ***/
+h1 {
+  margin-top: 0;
+  font-family: "Program OT Book", Arial, sans-serif;
+  font-size: 3rem;
+  color: #ded0cf;
+  font-weight: bold;
+  text-align: center;
+  background-color: #222;
+  height: auto;
+  padding: 1.1rem 0; }
+
+h2 {
+  font-family: "Program OT Book", Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 1rem; }
+
+h3 {
+  font-family: "Program Nar OT", Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #222;
+  font-weight: bold;
+  padding: 0.625rem 0; }
+
+#h3-price {
+  text-align: right; }
+
+p {
+  font-family: "Program Nar OT", Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #444;
+  font-weight: bold; }
+
+.font {
+  font-weight: 100;
+  font-family: "Program Nar OT", Arial, sans-serif;
+  padding-bottom: .5rem; }
+
+#size,
+#color {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem; }
+
+#shipping p {
+  color: #444;
+  font-weight: 100; }
+
+#errName,
+#errEmail,
+#errAddress1,
+#errCity,
+#errState,
+#errZipcode,
+#errOrder {
+  color: #FF0000;
+  padding-bottom: .5rem;
+  width: 100%;
+  font-size: 1rem; }
+
+#errOrder {
+  margin-top: 1rem; }
+
+/*** Images ***/
+#shirt {
+  width: 100%; }
+
+#checkmark {
+  margin: 4rem auto 10rem auto;
+  display: block; }
+
+/*** Order Completion ***/
+.orderContent {
+  margin-top: 5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 4rem; }
+  @media only screen and (min-width: 768px) {
+    .orderContent {
+      margin-top: 10rem;
+      font-size: 3.8rem;
+      margin-bottom: 2rem; } }
+
+#orderSum {
+  max-width: 90%; }
+  @media only screen and (min-width: 768px) {
+    #orderSum {
+      max-width: 400px; } }
+
+#orderSum h3 {
+  margin-bottom: 1rem;
+  font-weight: 200;
+  font-size: 2rem; }
+
+#orderSum .free p {
+  font-weight: 200;
+  color: #444; }
+
+.shipping-detail {
+  margin-top: 2rem; }
+
+.shipping-detail p {
+  font-weight: 200;
+  line-height: 1.6rem; }
+
+/*** Footer ***/
+footer {
+  font-family: "Program Nar OT", Arial, sans-serif;
+  color: #ded0cf;
+  text-align: center;
+  background-color: #222;
+  height: 50px;
+  padding: 1.1rem 0 0 0; }
+
+fieldset {
+  border: none; }
+  fieldset legend {
+    display: none; }
+
+input {
+  border-radius: 5px;
+  width: 100%; }
+  input ::-webkit-input-placeholder {
+    color: #BBB; }
+  input :-ms-input-placeholder {
+    color: #BBB; }
+  input ::-ms-input-placeholder {
+    color: #BBB; }
+  input ::placeholder {
+    color: #BBB; }
+
+select {
+  width: 100%;
+  height: 30px;
+  background-color: #efefef;
+  border-color: #d6d6d6;
+  margin-top: .5rem;
+  font-size: inherit;
+  margin-bottom: 2rem; }
+
+input[type=text] {
+  font-family: "Program Nar OT", Arial, sans-serif; }
+
+.shipping-content label {
+  font-family: "Program Nar OT", Arial, sans-serif; }
+
+.shipping-content input {
+  width: 100%;
+  height: 30px;
+  border: .05rem solid #d6d6d6;
+  background-color: #efefef;
+  margin: .5rem 0 1rem 0;
+  padding-left: .5rem; }
+
+#shipping-name {
+  margin-top: 1rem; }
+
+.shipping-info {
+  border-top: .05rem solid #d6d6d6;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media only screen and (min-width: 768px) {
+    .row {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
+
+.row:first-of-type {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #d6d6d6; }
+
+.row:nth-of-type(2) {
+  padding: 1.2rem 0; }
+
+.row:nth-of-type(3) {
+  padding-bottom: 1.2rem; }
+
+*:focus {
+  outline-color: #ded0cf; }
+
+.main-btn {
+  padding: 1rem 0.625rem;
+  font-family: "Program OT Book", Arial, sans-serif;
+  background-color: #222;
+  color: #ded0cf; }
+
+/*** Sizes  and Colors***/
+.size-btn,
+.color-btn {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem; }
+
+.size-btn input,
+.color-btn input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden; }
+
+.size-btn label {
+  font-family: "Program Nar OT", Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #222;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: none;
+  display: inline-block;
+  width: 30%;
+  height: 50px;
+  padding-top: .8rem;
+  background-color: #CCC; }
+
+.size-btn input:checked + label {
+  background-color: #ded0cf; }
+
+.color-btn label {
+  display: inline-block;
+  width: 20%;
+  height: 50px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: none;
+  padding-top: .8rem; }
+
+.color-btn input:checked + label {
+  border: 2px solid #ded0cf; }
+
+.color-btn label {
+  border-radius: 4px 4px 4px 4px; }
+
+.red {
+  background-color: red;
+  color: red; }
+
+.blue {
+  background-color: blue;
+  color: blue; }
+
+.green {
+  background-color: green;
+  color: green; }
+
+.black {
+  background-color: black;
+  color: black; }
