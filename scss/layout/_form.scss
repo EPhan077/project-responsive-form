@@ -1,0 +1,88 @@
+// FORM
+fieldset {
+    border: none;
+    
+    legend {
+    display: none;
+    }
+}
+
+input {
+    border-radius: 5px;
+    width: 100%;
+    
+    ::placeholder {
+    color: #BBB;
+    }
+}
+
+
+select {
+    width: 100%;
+    height: 30px;
+    background-color: #efefef;
+    border-color: #d6d6d6;
+    margin-top: .5rem;
+    font-size: inherit;
+    margin-bottom: 2rem;
+}
+
+input[type=text] {
+    font-family: $font-stack-secondary;
+}
+
+.shipping-content {
+    @extend %center-element;
+}
+
+.shipping-content label {
+    font-family: $font-stack-secondary;
+}
+
+.shipping-content input {
+    width: 100%;
+    height: 30px;
+    border: .05rem solid #d6d6d6;
+    background-color: #efefef;
+    margin: .5rem 0 1rem 0;
+    padding-left: .5rem;
+}
+
+#shipping-name {
+    margin-top: 1rem;
+}
+
+.shipping-info {
+    border-top: .05rem solid #d6d6d6;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @media only screen and #{$medium} {
+    flex-wrap: nowrap;
+    }
+}
+
+.row:first-of-type {
+    padding-bottom: 1rem;
+    border-bottom: .05rem solid #d6d6d6;;
+}
+
+.row:nth-of-type(2) {
+    padding: 1.2rem 0;
+    
+}
+
+.row:nth-of-type(3) {
+    padding-bottom: 1.2rem;
+    
+}
+
+*:focus {
+    outline-color: $secondary-color;
+}

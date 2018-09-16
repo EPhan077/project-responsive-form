@@ -1,0 +1,79 @@
+// BUTTONS
+.main-btn {
+    padding: 1rem 0.625rem;
+    font-family: $font-stack-primary;
+    background-color: #222;
+    color: $secondary-color;
+}
+
+/*** Sizes  and Colors***/
+.size-btn,
+.color-btn {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.size-btn input,
+.color-btn input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.size-btn label {
+    @include font($font-stack-secondary, $primary-font-size, $primary-color);
+    font-weight: bold;
+    text-align: center;
+    text-shadow: none;
+    display: inline-block;
+    width: 30%;
+    height: 50px;
+    padding-top: .8rem;
+    background-color: #CCC;
+}
+
+.size-btn input:checked+label {
+    background-color: #ded0cf;
+}
+
+.color-btn label {
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: none;
+    padding-top: .8rem;
+}
+
+.color-btn input:checked+label {
+    border: 2px solid $secondary-color;
+}
+
+.color-btn label {
+    border-radius: 4px 4px 4px 4px;
+}
+.red
+{
+    background-color: red;
+    color: red;
+}
+.blue {
+    background-color: blue;
+    color: blue;
+}
+.green {
+    background-color: green;
+    color: green;
+}
+.black {
+    background-color: black;
+    color: black;
+}
