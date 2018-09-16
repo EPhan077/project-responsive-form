@@ -1,6 +1,6 @@
-# Project Responsice Accessible Form
+# Project Responsive Accessible Form
 
-This project's purpose is to develop a a mobile-first, accessible form that validates user input. I built a responsive, accessible shopping/checkout form with custom validation. I made use of scss, gulp, semantic html, and javascript.
+This project's purpose is to develop a mobile-first, accessible form that validates user input. I built a responsive, accessible shopping/checkout form with custom validation. I made use of scss, gulp, semantic html, and javascript.
 
 ## Accessibility
 
