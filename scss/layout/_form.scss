@@ -25,6 +25,10 @@ select {
     margin-top: .5rem;
     font-size: inherit;
     margin-bottom: 2rem;
+    
+    option .default {
+        display: block;
+    }
 }
 
 input[type=text] {
